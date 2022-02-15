@@ -1,0 +1,242 @@
+body {
+    background-color: black;
+    color: gold;
+    font-size: 16px;
+    margin: 0%; /* doing this for the marging and padding in the body section clears resets the whole page and allows your divs to automatically fit edge to edge*/
+    padding: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Nav*/
+
+/* Nav Bar Border*/
+.nav-border {
+    overflow: hidden;
+    border-bottom: solid gold;
+    background-color: black;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-size: 0px;
+    z-index: 999; /* This put the nav bar layer above everything else. My anchors were showing inside the nav bar when scrolling past the headers. Think of it like 999 or 1000 is the upmost important top layer. and 1 is the lowest important bottom/behind layer*/
+
+}
+
+/* Nav Bar Section */
+nav {
+    margin: 0px;
+    padding: 0px;  
+    text-align: center; 
+
+    
+}
+
+/* Nav Bar Links */
+nav ul {
+    margin: 0%;
+    padding: 0%;
+    text-align: center; 
+    position: relative;
+    display: inline-block;
+
+
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 14px 16px;
+    font-size: 1.5rem;
+    display: inline-block;
+
+ 
+
+}
+
+nav ul li:hover {
+    background-color: #333;
+}
+
+nav ul li a {
+    color: gold;
+    text-decoration: none;
+}
+
+/* Main Page */
+
+.main {
+    padding-top: 15px;
+    padding-left: 15px;
+    margin: auto;
+    margin-top: 60px;
+    width: 60%;
+}
+
+.img-main {
+    display: block;
+    margin: 0px auto;
+}
+
+/*Commented this out because the above seemed to work the same and was less complex
+.img-main {
+    width: 100%;
+    height: 550px;
+    COMMENT These two allowed me to resize the image but not lose quality
+    object-fit:contain;
+    object-position: 50% 50%;
+    margin-bottom: 25px;
+}
+*/
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+
+
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin-top: 18px;
+    position: relative;
+}
+
+h1 span {
+    position: absolute;
+    top: -100px;
+    overflow: hidden;
+}
+
+/* These set the position for the anchors to sit just under my nav bar without affecting the spacing in content */
+h2 {
+    position: relative;
+}
+
+h2 span {
+    position: absolute;
+    top: -65px;
+    overflow: hidden;
+}
+
+/* About Us Section */
+
+/* Header */
+.about-us {
+    text-align: left;
+}
+
+/* Last Para */
+.about-last-p {
+    margin-bottom: 25px;
+}
+
+/* Gallery */
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexbox-container > div {
+    width: 100%;
+    margin: 5px;
+    
+}
+
+.gallery {
+    width: 100%;
+    min-width: 340px;
+    height: 569px;
+    object-fit:cover;
+
+}
+
+
+/* Price List */
+
+/* Header */
+.price-list {
+    font-size: 3rem;
+    text-decoration-line: underline;
+}
+
+/* Border */
+table {
+    border: solid 18px #333 ;
+    border-style: double;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+/* Table Headers */
+table th {
+    text-align: left;
+    font-size: 2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Services */
+table td {
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Cost */
+.£ {
+    text-align: center;
+}
+
+
+/* Img gallery 2 */
+.gallery2 {
+    display: block;
+    margin: 0px auto; 
+}
+
+
+/* Contact Section */
+
+/* Header */
+.contact-us {
+    margin-bottom: 25px;
+}
+
+/* Space for the form */
+.form-border {
+    width: 100%;
+    height: 600px;
+    border: dashed 5px #333;
+    padding: 20px; 
+}
+
+form {
+    font-size: 1.5rem;
+}
+
+input, select, textarea {
+    background-color: #333;
+    font-size: 1rem;
+    color: white;
+}
+
+textarea {
+    max-width: 600px;
+    max-height: 345px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Social Links */
+.social-links {
+    display: inline-block;
+    word-spacing: 50px;
+}
