@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Bad Hair Day</title>
+
+        <!-- This is font awesome V5 -->
+        <!-- <script src="https://kit.fontawesome.com/ef4342f3da.js" crossorigin="anonymous"></script>  -->
+        
+        <link rel="Stylesheet" href="style.css">
+    </head>
+    
+    <!-- Navigation -->
+    <body>
+        <header>
+            <div class="nav-border">
+                <nav> 
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#price-list">Price List</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div> 
+        </header>   
+    
+    <!-- Main Page -->
+        <div class="main">
+            <h1> <span id="home"></span> Bad Hair Day</h1>
+            <img class="img-main" src="images/main-hair.JPG" title="Bad Hair Day" alt="Bad hair style - Large bushy hair due to humidity">
+            
+            <!-- About Section -->
+            <h2 class="about-us"> <span id="about-us"></span>About Us</h2> <!--Adding span helped to set the position of the anchor with CSS-->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In possimus dolorem autem earum nobis facilis. Necessitatibus perferendis quod obcaecati, iusto, minus voluptate provident modi fugiat accusamus, porro rerum alias voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, sit? Aperiam quis ea facere dolor culpa quas repellat dolorum dolore maxime non! Voluptas quisquam explicabo autem ab eum itaque ratione?</p>
+            <p class="about-last-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum veritatis quasi voluptatum eveniet sapiente nam sit voluptates aperiam, modi ad. Ullam corrupti harum nihil voluptate illo expedita commodi suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sunt tempora quos facere explicabo velit voluptas similique modi optio dolor! Eius facilis doloremque, cum harum ut consequatur dignissimos deserunt ratione.</p>
+            
+            <!-- Img gallery 1-->
+            <div class="flexbox-container">
+                <div>
+                    <img class="gallery" src="images/hair1.JPG" title="Straight with bangs" alt="girl with long dark brown hair with bangs">
+                </div>
+
+                <div>
+                    <img class="gallery" src="images/hair2.JPG" title="Bow hair style" alt="Long blonde hair with the top half styled like a bow">
+                </div>
+
+                <div>
+                    <img class="gallery" src="images/hair5.JPG" title="Red Ombre" alt="Long dark brown hair with bright red ombre dye">
+                </div>
+            </div>
+
+            <!-- Price list -->
+            <h2 class="price-list"> <span id="price-list"></span> Price List</h2>
+
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td><i class="jas fa-cut"></i> Cut......................................................</td>
+                    <td class="£">£5</td>
+                </tr>
+
+                <tr>
+                    <td>Cut & Blow Dry.................................</td>
+                    <td class="£">£10</td>
+                </tr>
+
+                <tr>
+                    <td>Dye (Full Head).................................</td>
+                    <td class="£">£56</td>
+                </tr>
+
+                <tr>
+                    <td>Dye (Ombre)......................................</td>
+                    <td class="£">£39</td>
+                </tr>
+
+                <tr>
+                    <td>Perm...................................................</td>
+                    <td class="£">£22</td>
+                </tr>
+
+                <tr>
+                    <td>Shave Head........................................</td>
+                    <td class="£">£8</td>
+                </tr>
+
+                <tr>
+                    <td>Brazilian.............................................</td>
+                    <td class="£">£60</td>
+                </tr>
+                
+                <tr>
+                    <td>Styling................................................</td>
+                    <td class="£">£15</td>
+                </tr>
+
+            </table>
+
+            <!-- Img gallery 2 -->
+            <div class="gallery2-wrap">
+                <div>
+                    <img class="gallery2" src="images/hair3.JPG" title="Pink & Blue streaks" alt="Girl with long black hair and alternating pink and blue streaks.">
+                </div>
+            </div>
+
+
+            <!-- Contact Form -->
+            <h2 class="contact-us"> <span id="contact-us"></span> Make an appointment!</h2>
+            <div class="form-border">
+                <form>
+                    <div class="form-name">
+                        Name:<input type="text" required />
+                        Phone Number <input type="tel" maxlength="11" placeholder="0121-345-6789" />
+
+                    </div>
+
+                    <div class="email">
+                        Email <input type="email" required />
+                    </div>
+                    
+                    <div>
+                        Service Enquiry:<select required>
+                                            <option>Select</option>
+                                            <option>Cut</option>
+                                            <option>Dye</option>
+                                            <option>Perm</option>
+                                            <option>Shave</option>
+                                            <option>Brazilian</option>
+                                            <option>Styling</option>
+                                        </select>
+                    </div>
+                    
+                    <div>
+                        When would you like to make an appointment? <input type="datetime-local" required/>
+                    </div>
+                    <br>
+                        Let us know about any extra details of what you would like done<br>
+                        <textarea name="contact form" rows="9" cols="80"></textarea>
+
+                </form>
+            </div>
+            
+            
+            
+            <!-- Footer -->
+            <footer>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank"><img class="fb-social" src="images/fb-logo.png" title="Facebook Logo" alt="link to Facebook"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter-logo.png" title="Twitter Logo" alt="link to Twitter"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/ig-logo.png" title="Instagram Logo" alt="link to Instagram"></a>
+                </div>
+                <p>Bad Hair Day 2022 &copy</p>
+
+            </footer>
+
+
+
+        </div>
+
+
+    </body>
+
+</html> 
