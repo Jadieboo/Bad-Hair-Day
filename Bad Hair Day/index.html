@@ -4,24 +4,27 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Bad Hair Day</title>
-
-        <!-- This is font awesome V5 -->
-        <!-- <script src="https://kit.fontawesome.com/ef4342f3da.js" crossorigin="anonymous"></script>  -->
-        
-        <link rel="Stylesheet" href="style.css">
+        <title>Bad Hair Day</title>  
+        <script src="https://kit.fontawesome.com/ef4342f3da.js" crossorigin="anonymous"></script> <!--This is font awesome V5-->
+        <link rel="Stylesheet" href="css.css">
     </head>
     
     <!-- Navigation -->
     <body>
         <header>
-            <div class="nav-border">
+            <div class="nav-container">
+                <div class="left flex"> <i class="fa-solid fa-bars icon" onclick="toggle()"></i></div>
+                <div class="center flex"><a class="BHD bad" onclick="closeNav()" href="#home">Bad Hair Day</a></div>
+                <div class="right flex btn-nav">
+                    <button class="btn btn-style"><a class="btn-link" href="#contact-us">Book</a></button>
+                </div>
+
                 <nav> 
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about-us">About Us</a></li>
-                        <li><a href="#price-list">Price List</a></li>
-                        <li><a href="#contact-us">Contact Us</a></li>
+                    <ul id="nav-toggle" onclick="toggle()" class="desktop-bar">
+                        <li><a class="nav-links" href="#home">Home</a></li>
+                        <li><a class="nav-links" href="#about-us">About Us</a></li>
+                        <li><a class="nav-links" href="#price-list">Price List</a></li>
+                        <li><a class="nav-links" href="#contact-us">Contact Us</a></li>
                     </ul>
                 </nav>
             </div> 
@@ -29,88 +32,101 @@
     
     <!-- Main Page -->
         <div class="main">
-            <h1> <span id="home"></span> Bad Hair Day</h1>
-            <img class="img-main" src="images/main-hair.JPG" title="Bad Hair Day" alt="Bad hair style - Large bushy hair due to humidity">
+            <span id="home"></span>
+
+            <h1>Bad Hair Day</h1>
+            
+            <img class="img-main" src="images/main-hair.JPG" title="Bad Hair Day" alt="Bad hair style - Large bushy hair due to humidity" >
             
             <!-- About Section -->
-            <h2 class="about-us"> <span id="about-us"></span>About Us</h2> <!--Adding span helped to set the position of the anchor with CSS-->
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In possimus dolorem autem earum nobis facilis. Necessitatibus perferendis quod obcaecati, iusto, minus voluptate provident modi fugiat accusamus, porro rerum alias voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, sit? Aperiam quis ea facere dolor culpa quas repellat dolorum dolore maxime non! Voluptas quisquam explicabo autem ab eum itaque ratione?</p>
-            <p class="about-last-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum veritatis quasi voluptatum eveniet sapiente nam sit voluptates aperiam, modi ad. Ullam corrupti harum nihil voluptate illo expedita commodi suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sunt tempora quos facere explicabo velit voluptas similique modi optio dolor! Eius facilis doloremque, cum harum ut consequatur dignissimos deserunt ratione.</p>
-            
-            <!-- Img gallery 1-->
+            <h2 class="about-us"> <span id="about-us"></span>About Us</h2>
+            <div class="about-section"> <!--Adding span helped to set the position of the anchor with CSS-->
+                <p>
+                    I started as a mobile hair dresser and after building a client list I opened my first studio back in 2011 with the help and support of my family and now we have 400 studios around the west midlands. We are a family run busines, which we're very proud of and because of this, every time you visit one of our studios we aim to make you feel welcome as if you are around family!
+                </p>
+                <p class="about-last-p">
+                     During a visit to one of our studios not only will you recieve a professional service using the best products in the industry, you will also be free to engage in conversation or sit peacefully in some much needed time to yourself. We have individual pods for each client, with a seat for a friend to tag along. No more waiting outside! So what are you waiting for? <strong>Choose your preferred experience and book today!</strong>
+
+
+                </p>
+            </div>
+
+            <!-- Img gallery  1-->
             <div class="flexbox-container">
                 <div>
-                    <img class="gallery" src="images/hair1.JPG" title="Straight with bangs" alt="girl with long dark brown hair with bangs">
+                    <img class="gallery" src="images/shampoo-small.jpg" title="Straight with bangs" alt="girl with long dark brown hair with bangs">
                 </div>
 
                 <div>
-                    <img class="gallery" src="images/hair2.JPG" title="Bow hair style" alt="Long blonde hair with the top half styled like a bow">
+                    <img class="gallery" src="images/blowdry-small.jpg" title="Bow hair style" alt="Long blonde hair with the top half styled like a bow">
                 </div>
 
                 <div>
-                    <img class="gallery" src="images/hair5.JPG" title="Red Ombre" alt="Long dark brown hair with bright red ombre dye">
+                    <img class="gallery" src="images/pink-ombre-small.jpg" title="Red Ombre" alt="Long dark brown hair with bright red ombre dye">
                 </div>
             </div>
+
+           
 
             <!-- Price list -->
             <h2 class="price-list"> <span id="price-list"></span> Price List</h2>
 
-            <table>
+            <table class="table-center">
                 <tr>
-                    <th>Service</th>
+                    <th>Services</th>
                     <th>Price</th>
                 </tr>
 
                 <tr>
-                    <td><i class="jas fa-cut"></i> Cut......................................................</td>
+                    <td>Cut</td>
                     <td class="£">£5</td>
                 </tr>
 
                 <tr>
-                    <td>Cut & Blow Dry.................................</td>
+                    <td>Cut & Blow Dry</td>
                     <td class="£">£10</td>
                 </tr>
 
                 <tr>
-                    <td>Dye (Full Head).................................</td>
+                    <td>Dye (Full Head)</td>
                     <td class="£">£56</td>
                 </tr>
 
                 <tr>
-                    <td>Dye (Ombre)......................................</td>
+                    <td>Dye (Ombre)</td>
                     <td class="£">£39</td>
                 </tr>
 
                 <tr>
-                    <td>Perm...................................................</td>
+                    <td>Perm</td>
                     <td class="£">£22</td>
                 </tr>
 
                 <tr>
-                    <td>Shave Head........................................</td>
+                    <td>Shave Head</td>
                     <td class="£">£8</td>
                 </tr>
 
                 <tr>
-                    <td>Brazilian.............................................</td>
+                    <td>Brazilian</td>
                     <td class="£">£60</td>
                 </tr>
                 
                 <tr>
-                    <td>Styling................................................</td>
+                    <td>Styling</td>
                     <td class="£">£15</td>
                 </tr>
 
             </table>
 
             <!-- Img gallery 2 -->
-            <div class="gallery2-wrap">
+            <div class="flexbox-container">
                 <div>
-                    <img class="gallery2" src="images/hair3.JPG" title="Pink & Blue streaks" alt="Girl with long black hair and alternating pink and blue streaks.">
+                    <img class="gallery2" src="images/curls-small.jpg" title="Pink & Blue streaks" alt="Girl with long black hair and alternating pink and blue streaks.">
                 </div>
             </div>
 
-
+            
             <!-- Contact Form -->
             <h2 class="contact-us"> <span id="contact-us"></span> Make an appointment!</h2>
             <div class="form-border">
@@ -118,7 +134,6 @@
                     <div class="form-name">
                         Name:<input type="text" required />
                         Phone Number <input type="tel" maxlength="11" placeholder="0121-345-6789" />
-
                     </div>
 
                     <div class="email">
@@ -142,7 +157,7 @@
                     </div>
                     <br>
                         Let us know about any extra details of what you would like done<br>
-                        <textarea name="contact form" rows="9" cols="80"></textarea>
+                        <textarea name="contact form" rows="9" cols="30"></textarea>
 
                 </form>
             </div>
@@ -164,6 +179,32 @@
 
         </div>
 
+        <!--  -->
+        <script>
+            var menu = document.getElementById('nav-toggle');
+            var closeMenu = document.getElementById('nav-toggle');
+
+
+            function toggle() {
+                if (window.innerWidth < 1000 && menu.style.display === 'block'){
+                    menu.style.display = 'none';
+                } 
+
+                else {
+                    menu.style.display = 'block';
+                }
+            }
+
+            function closeNav() {
+                if (closeMenu.style.display === 'block'){
+                    closeMenu.style.display = 'none';
+                }                
+            }
+                       
+
+        </script>
+
+        
 
     </body>
 

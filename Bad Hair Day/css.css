@@ -1,0 +1,503 @@
+body {
+    background-color: black;
+    color: gold;
+    font-size: 16px;
+    margin: 0%; /* doing this for the margin and padding in the body section clears resets the whole page and allows your divs to automatically fit edge to edge*/
+    padding: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* MAIN PAGE */
+
+.main {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 90%;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+
+ h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    display: none;
+}
+
+
+/* NAV SPANS */
+/* Set the position for the anchors to sit just under my nav bar without affecting the spacing in content */
+#home{
+    position: absolute;
+    top: -100px;
+}
+
+h2 {
+    position: relative;
+}
+
+h2 span  {
+    position: absolute;
+    top: -60px;
+}
+
+.about-us {
+    margin-top: 100px;
+    font-size: 2rem;
+}
+
+.about-section{
+    font-size: 1rem;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
+/* Image Gallery 1 */
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1920px;
+    justify-content: space-evenly;
+}
+
+.gallery {
+    width: 370px;
+    height: 569px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+/* Price List */
+
+/* Header */
+.price-list {
+    margin-top: 60px;
+    font-size: 2rem;
+    text-decoration-line: underline;
+
+}
+
+/* Border */
+.table-center {
+    border: solid 6px #333 ;
+    border-style: double;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+/* Table Headers */
+table th {
+    text-align: center;
+    width: 85%;
+    border: 1px solid #333;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Services */
+table td {
+    text-align: left;
+    width: 85%;
+    border: 1px solid #333;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Cost */
+.£ {
+    text-align: center;
+}
+
+.contact-us {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 2rem;    
+}
+
+/* MOBILE MODE */
+ @media screen and (max-width: 999px) {
+     /* NAV CONTAINER */
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        border-bottom: solid gold;
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    .flex {
+        flex: 0 1 auto; /*default flex value*/
+    }
+
+        
+     /* LOGO */
+    .BHD {
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: gold;
+    font-size: 2rem;
+    font-weight: bold;
+    }
+    
+
+    /* MOBILE NAV BAR */
+    /* Nav Bar Section */
+    nav ul {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    /* Style nav menu */
+    nav ul li{
+        list-style: none;
+
+    }
+
+    /* Style nav menu links */
+    .nav-links{
+        color: gold;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        display: block;
+        text-align: center;
+    }
+
+    /* mouse-over */
+    .nav-links:hover {
+        color: white;
+        background-color: #333;
+        transition-duration: 0.2s;
+    }
+
+    /* Hide the links inside the hamburger menu */
+    #nav-toggle{
+        margin-top: 2.2em;
+        width: 100%;
+        background-color: black;
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        border-bottom: solid rgb(129, 110, 3);
+        z-index: 990;
+    }
+
+    /* Styling hamburger menu */
+    .icon {
+        padding-left: 5px;
+        font-size: 2.1em;
+        display: inline-block;
+        /* */
+        position: fixed; 
+        left: 0;
+        top: 0; 
+        cursor: pointer;
+        z-index: 999;
+    }
+     
+
+    /* Nav Button */
+    .btn-nav {
+        /* */
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .btn {        
+        border: none;
+        color: white;
+        padding: 9.5px 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+    .btn-link {
+        padding: 9.5px 4.5px;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+
+    }
+
+    .btn-link:hover {
+        color: black;
+        font-weight: 600;
+    }
+        
+    .btn-style {
+        background-color: #333;
+    }
+
+    .btn-style:hover {
+        background-color: gold;
+        
+        /* transition-duration: 0.9s; */
+        
+    }
+
+}
+
+/* TABLET MODE */
+@media screen and (min-width: 700px){
+    /* NAV */
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        border-bottom: solid gold;
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    .flex {
+        flex: 0 1 auto; /*default flex value*/
+    }    
+    
+    /* MAIN */
+    .main {
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 70%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .about-us {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        float: left;
+    }
+    
+    /* Price List */
+
+    /* Header */
+    .price-list {
+        font-size: 3rem;
+        text-decoration-line: underline;
+    }
+
+    /* Border */
+    .table-center {
+        border: solid 18px #333 ;
+        border-style: double;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        align-items: center;
+
+    }
+
+    /* Table Headers */
+    table th {
+        width: 90%;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* Services */
+    table td {
+        width: 90%;
+        font-size: 1.5rem;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* Cost */
+    .£ {
+        text-align: center;
+    }
+
+}
+
+/* LAPTOP/DESKTOP */
+@media screen and (min-width: 1000px){
+    /* LOGO */
+    .BHD {
+        display: none;
+    }
+
+    /* TITLE */
+    h1 {
+        display: block;
+        margin: 80px auto;
+        text-align: center;
+        font-size: 4em;
+    }
+
+    
+        /* NAV BAR */  
+
+    /* hide hamburger menu icon */
+    .icon {
+        display: none;
+    }
+
+    /* Nav Bar Container*/
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        border-bottom: solid gold;
+        background-color: black;
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-size: 0px;
+        z-index: 999; /* This put the nav bar layer above everything else. My anchors were showing inside the nav bar when scrolling past the headers. Think of it like 999 or 1000 is the upmost important top layer. and 1 is the lowest important bottom/behind layer*/
+    }
+
+    .flex {
+        flex: 0 1 auto; /*default flex value*/
+    }
+       
+    /* Nav Bar Section */
+    nav {
+        margin: 0px;
+        padding: 0px;  
+        text-align: center;   
+    }
+
+    /* #nav-toggle */
+    nav ul {
+        display: inline-block;
+        margin: 0%;
+        padding: 0%;
+        text-align: center; 
+        position: relative;
+    }
+     
+    nav ul li {
+        list-style-type: none;
+        font-size: 1.5rem;
+        display: inline-block;
+    }
+
+    .nav-links {
+        padding: 14px 16px;
+        color: gold;
+        text-decoration: none;
+        font-size: 1.1rem;
+        display: inline-block;
+    }
+
+    /* mouse-over */
+    .nav-links:hover {
+        color: white;
+        background-color: #333;
+        transition-duration: 0.2s;
+    }
+
+    /* NAV CALL TO ACTION BUTTON */
+
+    /* Nav Button */
+    .btn-nav {
+        /* */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .btn {
+        border: none;
+        padding: 15.5px 0;
+        text-align: center;
+        display: inline-block;
+        transition-duration: 0.2s;
+        cursor: pointer;
+        background-color: aqua;
+    }
+
+    .btn-link {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 550;
+        padding: 15.5px 30px;
+    }
+
+    .btn-link:hover {
+        color: black;
+        font-weight: 800;        
+    }
+
+    .btn-style {
+        background-color: #333;
+
+    }
+
+    .btn-style:hover {
+        background-color: gold;
+        color: black;
+        /* transition-duration: 0.9s; */
+        
+    }
+
+    /* MAIN */
+
+    /* ABOUT SECTION */
+    /* ABOUT HEADER */
+    .about-us {
+        font-size: 3rem;
+        margin-top: 150px;
+    }
+
+    /* Container */
+    .about-section {
+        display: flex;
+        justify-content: space-around;
+        margin: 24px 0 40px 0;
+    }
+
+    /* Paragraphs */
+    .about-section p {
+        font-size: 1.5rem;
+        text-align: start;
+        margin: 24px 10px;
+        padding: 0 10px;
+    }
+
+}
